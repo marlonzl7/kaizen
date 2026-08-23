@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: ${DB_CONTAINER_NAME:-kaizenbaiten-db}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-kaizenbaiten}
+      POSTGRES_USER: ${DB_USER:-kaizenbaiten}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-kaizenbaiten}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-kaizenbaiten} -d ${DB_NAME:-kaizenbaiten}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db_data:
