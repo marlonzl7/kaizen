@@ -76,7 +76,7 @@ feat/nome-da-feature → dev → main
 | Lucas Eiki | [@lucas-eiki](https://github.com/lucas-eiki) |
 | Rayza Gomes | [@RayzaDSbr](https://github.com/RayzaDSbr) |
 | Gabriela Pereira | [@GabrielaPereiraSantana](https://github.com/GabrielaPereiraSantana) |
-| Daniel Foschini | -- |
+| Daniel Foschini | [@D-Foschini](https://github.com/D-Foschini) |
 
 ## Como rodar o projeto
 
