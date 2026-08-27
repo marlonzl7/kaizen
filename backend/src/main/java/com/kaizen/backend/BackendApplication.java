@@ -1,4 +1,4 @@
-package com.kaizenbaiten.backend;
+package com.kaizen.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
