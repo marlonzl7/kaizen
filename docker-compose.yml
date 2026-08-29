@@ -1,18 +1,18 @@
 services:
   db:
     image: postgres:16-alpine
-    container_name: ${DB_CONTAINER_NAME:-kaizenbaiten-db}
+    container_name: ${DB_CONTAINER_NAME:-kaizen-db}
     restart: unless-stopped
     environment:
-      POSTGRES_DB: ${DB_NAME:-kaizenbaiten}
-      POSTGRES_USER: ${DB_USER:-kaizenbaiten}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-kaizenbaiten}
+      POSTGRES_DB: ${DB_NAME:-kaizen}
+      POSTGRES_USER: ${DB_USER:-kaizen}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-kaizen}
     ports:
       - "${DB_PORT:-5432}:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-kaizenbaiten} -d ${DB_NAME:-kaizenbaiten}"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-kaizen} -d ${DB_NAME:-kaizen}"]
       interval: 5s
       timeout: 5s
       retries: 5
