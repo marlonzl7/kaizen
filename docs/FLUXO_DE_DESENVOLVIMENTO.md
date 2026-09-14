@@ -67,7 +67,7 @@ Faça commits seguindo o padrão definido em [Guia de Padrão de Commits](./PADR
 
 Exemplo:
 ```bash
-git commit -m "feat: implementar login com sessão"
+git commit -m "feat: implementa login com sessão"
 ```
 
 ---

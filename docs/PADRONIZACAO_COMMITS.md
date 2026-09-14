@@ -8,7 +8,7 @@ tipo: descrição
 
 Exemplo:
 ```
-feat: adicionar suporte a múltiplos usuários
+feat: adiciona suporte a múltiplos usuários
 ```
 
 ---
@@ -20,7 +20,7 @@ Nova funcionalidade adicionada ao sistema.
 
 Exemplo:
 ```
-feat: adicionar autenticação com JWT
+feat: adiciona autenticação com JWT
 ```
 
 ### fix
@@ -28,7 +28,7 @@ Correção de bug.
 
 Exemplo:
 ```
-fix: corrigir erro no cálculo da média
+fix: corrige erro no cálculo da média
 ```
 
 ### docs
@@ -36,7 +36,7 @@ Alterações na documentação.
 
 Exemplo:
 ```
-docs: atualizar instruções de instalação
+docs: atualiza instruções de instalação
 ```
 
 ### style
@@ -44,7 +44,7 @@ Mudanças apenas visuais ou de formatação (não altera lógica).
 
 Exemplo:
 ```
-style: ajustar indentação no controller
+style: ajusta indentação no controller
 ```
 
 ### refactor
@@ -52,7 +52,7 @@ Refatoração de código sem alterar comportamento.
 
 Exemplo:
 ```
-refactor: simplificar validação de usuário
+refactor: simplifica validação de usuário
 ```
 
 ### test
@@ -60,7 +60,7 @@ Adição ou modificação de testes.
 
 Exemplo:
 ```
-test: adicionar testes para UserService
+test: adiciona testes para UserService
 ```
 
 ### chore
@@ -68,7 +68,7 @@ Tarefas de manutenção.
 
 Exemplo:
 ```
-chore: atualizar dependências do projeto
+chore: atualiza dependências do projeto
 ```
 
 ---
@@ -76,7 +76,7 @@ chore: atualizar dependências do projeto
 ## Boas práticas
 
 - Use descrição curta e objetiva
-- Escreva no imperativo (ex: "adicionar", "corrigir", "remover")
+- Escreva a descrição usando verbos no presente (ex: "adicionar", "corrigir", "remover")
 - Evite commits genéricos como:
   - "update"
   - "mudanças"
@@ -87,5 +87,5 @@ chore: atualizar dependências do projeto
 ## Exemplo de commit completo
 
 ```bash
-git commit -m "feat: implementar endpoint de cadastro de usuário"
+git commit -m "feat: implementa endpoint de cadastro de usuário"
 
